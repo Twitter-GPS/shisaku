@@ -23,6 +23,6 @@ navigator.geolocation.getCurrentPosition(loc_print, loc_error);
 
 function loadmap(){
 var mapurl
-mapurl = '<img src = "http://maps.google.com/maps/api/staticmap?center='+ido+','+keido+'&size=400x400&zoom=15&sensor=true">'
+mapurl = '<img src = "http://maps.google.com/maps/api/staticmap?center='+ido+','+keido+'&size=400x400&zoom=15&markers='+ido+','+keido+'&sensor=true">'
   document.getElementById("map").innerHTML = mapurl;
 }
