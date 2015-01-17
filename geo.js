@@ -22,7 +22,10 @@ navigator.geolocation.getCurrentPosition(loc_print, loc_error);
 }
 
 function loadmap(){
-var mapurl
+var mapurl, text, tweetbutton
 mapurl = '<img src = "http://maps.google.com/maps/api/staticmap?center='+ido+','+keido+'&size=400x400&zoom=15&markers='+ido+','+keido+'&sensor=true">'
+//text = encodeURI(ここにいます)
+tweetbutton = '<A href="https://twitter.com/intent/tweet?text=ここにいます+http://maps.google.co.jp/maps?f=q&hl=ja&q='+ido+','+keido+'&ie=UTF8&ll='+ido+','+keido+'&z=14">ツイートする</A>'
   document.getElementById("map").innerHTML = mapurl;
+  document.getElementById("tweetbutton").innerHTML = tweetbutton;
 }
