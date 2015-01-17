@@ -27,9 +27,9 @@ mapurl = '<img src = "http://maps.google.com/maps/api/staticmap?center='+ido+','
 //text = encodeURI(ここにいます)
 tweetbutton = '<A href="https://twitter.com/intent/tweet?text=ここにいます+http://maps.google.co.jp/maps?f=q%26hl=ja%26q='+ido+','+keido+'%26ie=UTF8%26ll='+ido+','+keido+'%26z=14" target="_blank">ツイートする</A>'
   document.getElementById("map").innerHTML = mapurl;
-  document.getElementById("tweetbutton").innerHTML = '<input type="button" value="現在地をツイートする" onclick="maketweet();">';
+  document.getElementById("tweetbutton").innerHTML = tweetbutton;
 }
 
-function maketweet(){
-  window.open('https://twitter.com/intent/tweet?text=ここにいます+http://maps.google.co.jp/maps?f=q%26hl=ja%26q='+ido+','+keido+'%26ie=UTF8%26ll='+ido+','+keido+'%26z=14',null)
-}
+//function maketweet(){
+//  window.open("https://twitter.com/intent/tweet?text=ここにいます+http://maps.google.co.jp/maps?f=q%26hl=ja%26q='+ido+','+keido+'%26ie=UTF8%26ll='+ido+','+keido+'%26z=14",null)
+//}
